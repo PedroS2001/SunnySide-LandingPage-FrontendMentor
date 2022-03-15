@@ -1,0 +1,24 @@
+// COLORES
+//PRIMARIOS
+$softRed: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$darkCyan: hsl(167, 40%, 24%);      //Graphic design text
+$darkBlue: hsl(198, 62%, 26%);     //Photography text
+$darkModerateCyan: hsl(168, 34%, 41%);   //Footer
+
+//NEUTRAL
+$veryDarkBlue: hsl(212, 27%, 19%);
+$veryDarkGrayish: hsl(213, 9%, 39%);
+$darkGrayish: hsl(232, 10%, 55%);
+$grayishBlue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+
+$font-size: 18px;
+
+//IMPORT DE FUENTES Barlow 600 y Fraunces 700/900
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+/*
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif;
+*/
