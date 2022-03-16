@@ -4,10 +4,10 @@
         .imagen{
             width: 100%;
         }
-        .text{
+        .texto{
             width: 100%;
-            div{
-                padding: 25px;
+            .text{
+                max-width: 80%;
             }
         }
     }
@@ -16,20 +16,27 @@
         .imagen{
             width: 100%;
         }
-        .text{
+        .texto{
             width: 100%;
-            div{
-                padding: 25px;
+            .text{
+                max-width: 80%;
             }
-
         }
     }
 
     #projects{
-        &>div{
+        .photography{
             width: 100%;
-            div{
-                margin: 0;
+            p{
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+        }
+        .graphicdesign{
+            width: 100%;
+            p{
+                margin-left: 5%;
+                margin-right: 5%;
             }
         }
     }
