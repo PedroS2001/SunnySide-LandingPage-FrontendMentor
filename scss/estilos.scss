@@ -147,7 +147,7 @@ header{
     .graphicdesign{
         width: 50%;
         height: 70vh;
-        background-image: url("/images/desktop/image-graphic-design.jpg");
+        background-image: url("../images/desktop/image-graphic-design.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -176,7 +176,7 @@ header{
     .photography{
         width: 50%;
         height: 70vh;
-        background-image: url("/images/desktop/image-photography.jpg");
+        background-image: url("../images/desktop/image-photography.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -260,6 +260,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     #logo{
+        text-align: center;
         font-family: 'Barlow', sans-serif;
         font-weight: 900;
         font-size: 2em;

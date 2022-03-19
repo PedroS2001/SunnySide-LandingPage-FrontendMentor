@@ -119,7 +119,7 @@ header {
   #projects .graphicdesign {
     width: 50%;
     height: 70vh;
-    background-image: url("/images/desktop/image-graphic-design.jpg");
+    background-image: url("../images/desktop/image-graphic-design.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -141,7 +141,7 @@ header {
   #projects .photography {
     width: 50%;
     height: 70vh;
-    background-image: url("/images/desktop/image-photography.jpg");
+    background-image: url("../images/desktop/image-photography.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -207,6 +207,7 @@ footer {
   justify-content: space-around;
   align-items: center; }
   footer #logo {
+    text-align: center;
     font-family: 'Barlow', sans-serif;
     font-weight: 900;
     font-size: 2em;
@@ -255,7 +256,9 @@ footer {
       margin: 30px 5px; }
   #imagenes div {
     width: 50%; }
-  footer #menu {
+  footer div {
     width: 100%; }
-    footer #menu a {
-      padding: 15px; } }
+  footer #menu a {
+    padding: 15px; }
+  footer #redes img {
+    margin: 10px; } }
