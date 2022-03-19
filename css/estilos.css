@@ -212,10 +212,10 @@ footer {
     font-size: 2em;
     color: red; }
   footer #menu {
-    width: 20%;
+    width: 30%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between; }
+    justify-content: space-around; }
     footer #menu a {
       text-decoration: none;
       color: #458c7e; }
@@ -225,7 +225,7 @@ footer {
     flex-flow: row nowrap;
     justify-content: space-around; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   #about .imagen {
     width: 100%; }
   #about .texto {
@@ -247,4 +247,15 @@ footer {
     width: 100%; }
     #projects .graphicdesign p {
       margin-left: 5%;
-      margin-right: 5%; } }
+      margin-right: 5%; }
+  #testimonios article {
+    width: 100%;
+    margin: 10%; }
+    #testimonios article p {
+      margin: 30px 5px; }
+  #imagenes div {
+    width: 50%; }
+  footer #menu {
+    width: 100%; }
+    footer #menu a {
+      padding: 15px; } }

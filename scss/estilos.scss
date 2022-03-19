@@ -267,10 +267,10 @@ footer{
     }
 
     #menu{
-        width: 20%;
+        width: 30%;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: space-around;
         a{
             text-decoration: none;
             color: $darkModerateCyan;

@@ -1,4 +1,4 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     
     #about{
         .imagen{
@@ -40,5 +40,29 @@
             }
         }
     }
+
+    #testimonios{
+        article{
+            width: 100%;
+            margin: 10%;
+            p{
+                margin: 30px 5px;
+            }
+        }
+    }
+
+    #imagenes{
+        div{
+            width: 50%;
+        }
+    }
     
+    footer{
+        #menu{
+            width: 100%;
+            a{
+                padding: 15px;
+            }
+        }
+    }
 }
