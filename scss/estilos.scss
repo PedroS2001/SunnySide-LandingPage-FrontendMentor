@@ -14,21 +14,47 @@ header{
     background-position: center bottom;
     background-size: cover;
     nav{
+        width: 100%;
         display: flex;
-        padding: 25px;
         justify-content: space-between;
+        flex-flow: row nowrap;
+        align-items: center;
+        padding-top: 15px;
+        .logo{
+            margin: 25px;
+        }
         .menu{
-            width: 50%;
-            ul{
-                display: flex;
-                flex-flow: row wrap;
-                list-style: none;
-                justify-content: space-around;
-                li{
+            display: flex;
+            flex-flow: row nowrap;
+            list-style: none;
+            margin-right: 25px;
+            transition: all 0.5s;
+            li{
+                margin-right: 25px;
+                border-radius: 25px;
+                a{
+                    padding: 10px 15px;
+                    text-decoration: none;
                     color: $white;
+                    display: block;
+                    &:hover{
+                        color: $darkBlue;
+                    }
+                }
+                &:hover{
+                    background-color: $white;
+                    transition: all .5s;
                 }
             }
-        } 
+        }
+        .btn-toggle{
+            display: none;
+            margin: 25px;
+            cursor: pointer;
+        }
+        .menu.show{
+            left: -100%;
+        }
     }
 
     .banner{
@@ -84,13 +110,30 @@ header{
                 margin-bottom: 5%;
                 color: $darkGrayish;
             }
-            a{ 
-                padding-left: 5px;
-                text-transform: uppercase;
-                font-weight: 900;
-                text-decoration: none;
-                color: $veryDarkBlue;
-                font-family: 'Fraunces', serif;
+            div{
+                a{ 
+                    padding: 8px;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    text-decoration: none;
+                    color: $veryDarkBlue;
+                    font-family: 'Fraunces', serif;
+                }
+                span{
+                    transition: 0.8s;
+                    position: relative;
+                    top: -8px;
+                    z-index: -1;
+                    display: block;
+                    width: 100%;
+                    border-radius: 10px;
+                    height: 10px;
+                }
+                &:hover{
+                    span{
+                        background-color: $yellow;
+                    }
+                }
             }
         }
 
@@ -127,13 +170,31 @@ header{
                 margin-bottom: 5%;
                 color: $darkGrayish;
             }
-            a{ 
-                padding-left: 5px;
-                text-transform: uppercase;
-                font-weight: 900;
-                text-decoration: none;
-                color: $veryDarkBlue;
-                font-family: 'Fraunces', serif;
+            div{
+
+                a{ 
+                    padding-left: 5px;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    text-decoration: none;
+                    color: $veryDarkBlue;
+                    font-family: 'Fraunces', serif;
+                }
+                span{
+                    transition: 0.8s;
+                    position: relative;
+                    top: -8px;
+                    z-index: -1;
+                    display: block;
+                    width: 100%;
+                    border-radius: 10px;
+                    height: 10px;
+                }
+                &:hover{
+                    span{
+                        background-color: $softRed;
+                    }
+                }
             }
         }
 
@@ -204,8 +265,9 @@ header{
 
 #testimonios{
     text-align: center;
+    background-color: $white;
     h2{
-        color: $grayishBlue;
+        color: $darkGrayish;
         text-transform: uppercase;
         font-family: 'Fraunces', serif;
         letter-spacing: 5px;
@@ -226,7 +288,7 @@ header{
         }
         p{
             margin: 50px 5px;
-            color: $darkGrayish;
+            color: $veryDarkGrayish;
         }
         h5{
             font-family: 'Fraunces', serif;
@@ -234,7 +296,7 @@ header{
         }
         span{
             color: $grayishBlue;
-            font-weight: 200
+            font-size: 0.8em;
         }
     }
 }
@@ -259,12 +321,21 @@ footer{
     flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
+
     #logo{
-        text-align: center;
-        font-family: 'Barlow', sans-serif;
-        font-weight: 900;
-        font-size: 2em;
-        color: red;
+        svg{
+            path{
+                fill: $darkModerateCyan;
+            }
+        }
+        // filter: sepia(1) brightness(0.5) contrast(1)  ;
+
+        // clip-path: fill-box;
+        // text-align: center;
+        // font-family: 'Barlow', sans-serif;
+        // font-weight: 900;
+        // font-size: 2em;
+        // color: red;
     }
 
     #menu{
@@ -275,6 +346,10 @@ footer{
         a{
             text-decoration: none;
             color: $darkModerateCyan;
+            transition: 0.2s;
+            &:hover{
+                color: $white;
+            }
         }
     }
 
@@ -283,6 +358,12 @@ footer{
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
+        img{
+            transition: 0.2s;
+            &:hover{
+               filter: grayscale(100%) saturate(0%) brightness(200%) sepia(100%);
+            }
+        }
     }
 }
 

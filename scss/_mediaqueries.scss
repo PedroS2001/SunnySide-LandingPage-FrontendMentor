@@ -1,5 +1,32 @@
 @media screen and (max-width: 768px) {
     
+    header{
+        nav{
+            // position: fixed;
+            background-color: #3EBFFF;   
+
+            .btn-toggle{
+                display: inline-flex;
+            }
+            .menu{
+                position: fixed;
+                height: 100%;
+                background-color: #3EBFFF;   
+
+                top: 90px;
+                text-align: center;
+                flex-flow: column wrap;
+                li{
+                    margin: 15px;
+                    a{
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+
+
     #about{
         .imagen{
             width: 100%;

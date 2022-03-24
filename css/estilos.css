@@ -16,18 +16,39 @@ header {
   background-position: center bottom;
   background-size: cover; }
   header nav {
+    width: 100%;
     display: flex;
-    padding: 25px;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-top: 15px; }
+    header nav .logo {
+      margin: 25px; }
     header nav .menu {
-      width: 50%; }
-      header nav .menu ul {
-        display: flex;
-        flex-flow: row wrap;
-        list-style: none;
-        justify-content: space-around; }
-        header nav .menu ul li {
-          color: white; }
+      display: flex;
+      flex-flow: row nowrap;
+      list-style: none;
+      margin-right: 25px;
+      transition: all 0.5s; }
+      header nav .menu li {
+        margin-right: 25px;
+        border-radius: 25px; }
+        header nav .menu li a {
+          padding: 10px 15px;
+          text-decoration: none;
+          color: white;
+          display: block; }
+          header nav .menu li a:hover {
+            color: #19536b; }
+        header nav .menu li:hover {
+          background-color: white;
+          transition: all .5s; }
+    header nav .btn-toggle {
+      display: none;
+      margin: 25px;
+      cursor: pointer; }
+    header nav .menu.show {
+      left: -100%; }
   header .banner {
     height: 100%;
     color: white;
@@ -71,13 +92,24 @@ header {
       #about .texto .text p {
         margin-bottom: 5%;
         color: #818498; }
-      #about .texto .text a {
-        padding-left: 5px;
+      #about .texto .text div a {
+        padding: 8px;
         text-transform: uppercase;
         font-weight: 900;
         text-decoration: none;
         color: #23303e;
         font-family: 'Fraunces', serif; }
+      #about .texto .text div span {
+        transition: 0.8s;
+        position: relative;
+        top: -8px;
+        z-index: -1;
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+        height: 10px; }
+      #about .texto .text div:hover span {
+        background-color: #fad400; }
 
 #services {
   display: flex;
@@ -104,13 +136,24 @@ header {
       #services .texto .text p {
         margin-bottom: 5%;
         color: #818498; }
-      #services .texto .text a {
+      #services .texto .text div a {
         padding-left: 5px;
         text-transform: uppercase;
         font-weight: 900;
         text-decoration: none;
         color: #23303e;
         font-family: 'Fraunces', serif; }
+      #services .texto .text div span {
+        transition: 0.8s;
+        position: relative;
+        top: -8px;
+        z-index: -1;
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+        height: 10px; }
+      #services .texto .text div:hover span {
+        background-color: #fe7867; }
 
 #projects {
   display: flex;
@@ -163,12 +206,13 @@ header {
 
 #testimonios {
   text-align: center;
+  background-color: white;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 10%; }
   #testimonios h2 {
-    color: #a7abae;
+    color: #818498;
     text-transform: uppercase;
     font-family: 'Fraunces', serif;
     letter-spacing: 5px;
@@ -181,13 +225,13 @@ header {
       border-radius: 50%; }
     #testimonios article p {
       margin: 50px 5px;
-      color: #818498; }
+      color: #5a636c; }
     #testimonios article h5 {
       font-family: 'Fraunces', serif;
       color: #23303e; }
     #testimonios article span {
       color: #a7abae;
-      font-weight: 200; }
+      font-size: 0.8em; }
 
 #imagenes {
   display: flex;
@@ -206,12 +250,8 @@ footer {
   flex-flow: column wrap;
   justify-content: space-around;
   align-items: center; }
-  footer #logo {
-    text-align: center;
-    font-family: 'Barlow', sans-serif;
-    font-weight: 900;
-    font-size: 2em;
-    color: red; }
+  footer #logo svg path {
+    fill: #458c7e; }
   footer #menu {
     width: 30%;
     display: flex;
@@ -219,14 +259,36 @@ footer {
     justify-content: space-around; }
     footer #menu a {
       text-decoration: none;
-      color: #458c7e; }
+      color: #458c7e;
+      transition: 0.2s; }
+      footer #menu a:hover {
+        color: white; }
   footer #redes {
     width: 15%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around; }
+    footer #redes img {
+      transition: 0.2s; }
+      footer #redes img:hover {
+        filter: grayscale(100%) saturate(0%) brightness(200%) sepia(100%); }
 
 @media screen and (max-width: 768px) {
+  header nav {
+    background-color: #3EBFFF; }
+    header nav .btn-toggle {
+      display: inline-flex; }
+    header nav .menu {
+      position: fixed;
+      height: 100%;
+      background-color: #3EBFFF;
+      top: 90px;
+      text-align: center;
+      flex-flow: column wrap; }
+      header nav .menu li {
+        margin: 15px; }
+        header nav .menu li a {
+          font-size: 1.5em; }
   #about .imagen {
     width: 100%; }
   #about .texto {
