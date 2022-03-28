@@ -3,10 +3,6 @@
 font-family: 'Barlow', sans-serif;
 font-family: 'Fraunces', serif;
 */
-/*
-#ABOUT Y #SERVICES es exactamente lo mismo, cambia solo el color. usa extend
-.photography y .graphicDesign igual. Comparten todo menos el color.
-*/
 * {
   margin: 0;
   padding: 0;

@@ -5,7 +5,7 @@ const menuItems = document.getElementById('menu');
 if (btnMenu) {
     btnMenu.addEventListener('click', () => {
         menuItems.classList.toggle('show');
-        console.log(window.innerWidth);
+        // console.log(window.innerWidth);
     });
 }
 
@@ -13,6 +13,6 @@ window.onresize = () =>{
     if(window.innerWidth > 764)
     {
         menuItems.classList.remove('show');
-        console.log("ADS");
+        // console.log("ADS");
     }
 }
