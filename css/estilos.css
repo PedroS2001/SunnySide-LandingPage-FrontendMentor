@@ -79,7 +79,8 @@ header {
 
 #about {
   display: flex;
-  flex-flow: row-reverse wrap; }
+  flex-flow: row-reverse wrap;
+  background-color: #FaFaFa; }
   #about .imagen {
     width: 50%; }
     #about .imagen img {
@@ -125,7 +126,8 @@ header {
 
 #services {
   display: flex;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  background-color: #FaFaFa; }
   #services .imagen {
     width: 50%; }
     #services .imagen img {
@@ -220,7 +222,7 @@ header {
 
 #testimonios {
   text-align: center;
-  background-color: white;
+  background-color: #FaFaFa;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;

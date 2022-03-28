@@ -1,6 +1,7 @@
 @mixin firstLine($color, $orden){
     display: flex;
     flex-flow: $orden;
+    background-color: #FaFaFa;
     .imagen{
         width: 50%;
         img{

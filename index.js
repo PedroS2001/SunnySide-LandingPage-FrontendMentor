@@ -1,6 +1,6 @@
 //Para Cuando termine de cargar el HTML completo
 const btnMenu = document.getElementById('boton')    //Agarro el menu hamburguesa;
-const menuItems = document.getElementById('menu');
+const menuItems = document.getElementById('menuu');
 
 if (btnMenu) {
     btnMenu.addEventListener('click', () => {
