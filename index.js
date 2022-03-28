@@ -1,17 +1,18 @@
 //Para Cuando termine de cargar el HTML completo
 const btnMenu = document.getElementById('boton')    //Agarro el menu hamburguesa;
+const menuItems = document.getElementById('menu');
 
 if (btnMenu) {
-
     btnMenu.addEventListener('click', () => {
-        const menuItems = document.getElementById('menu');
         menuItems.classList.toggle('show');
-        console.log("click");
+        console.log(window.innerWidth);
     });
 }
-else {
-    console.log("No EXISte");
+
+window.onresize = () =>{
+    if(window.innerWidth > 764)
+    {
+        menuItems.classList.remove('show');
+        console.log("ADS");
+    }
 }
-
-console.log("Cargo");
-
