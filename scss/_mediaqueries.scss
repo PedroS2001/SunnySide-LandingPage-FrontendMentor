@@ -2,24 +2,39 @@
     
     header{
         nav{
-            // position: fixed;
-            background-color: #3EBFFF;   
-
             .btn-toggle{
                 display: inline-flex;
             }
             .menu{
-                position: fixed;
-                height: 100%;
-                background-color: #3EBFFF;   
+                clip-path: polygon(87% 10%, 100% 0, 100% 100%, 0 100%, 0 10%);
+                position: absolute;
+                background-color: $white;   
 
-                top: 90px;
+                top: 110px;
+                left: 10%;
+                width: 80%;
+                
+                padding-top: 10%;
+                padding-bottom: 8%;
+                border-radius: 3px;
                 text-align: center;
                 flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
                 li{
-                    margin: 15px;
+                    margin: 0;
+                    width: 50%;
                     a{
-                        font-size: 1.5em;
+                        color: $darkGrayish;
+                    }
+                    &:hover{
+                        background-color: rgba($color: #000000, $alpha: 0.1);
+                    }
+                }
+                #contact{
+                    background-color: $yellow;
+                    &:hover{
+                        background-color: $yellow
                     }
                 }
             }
@@ -87,6 +102,9 @@
     footer{
         div{
             width: 100%;
+        }
+        #logo{
+            width: auto;
         }
         #menu{
             a{

@@ -28,22 +28,35 @@ header{
             flex-flow: row nowrap;
             list-style: none;
             margin-right: 25px;
-            transition: all 0.5s;
+            transition: ease-in 0.2s;
             li{
                 margin-right: 25px;
                 border-radius: 25px;
                 a{
-                    padding: 10px 15px;
+                    padding: 15px 20px;
                     text-decoration: none;
                     color: $white;
                     display: block;
-                    &:hover{
-                        color: $darkBlue;
-                    }
                 }
                 &:hover{
-                    background-color: $white;
+                    background-color: rgba($color: $white, $alpha: 0.2);
                     transition: all .5s;
+                }
+            }
+            #contact{
+                background-color: $white;
+                a{
+                    text-transform: uppercase;
+                    color: $veryDarkBlue;
+                    font-family: 'Fraunces', serif;
+                    font-weight: 600;
+                }
+                &:hover{
+                    background-color: rgba($color: $white, $alpha: 0.2);
+                    transition: all .5s;
+                    a{
+                        color: $white;
+                    }
                 }
             }
         }
@@ -53,7 +66,8 @@ header{
             cursor: pointer;
         }
         .menu.show{
-            left: -100%;
+            display: none;
+            // top: -1000%;
         }
     }
 
@@ -128,10 +142,12 @@ header{
                     width: 100%;
                     border-radius: 10px;
                     height: 10px;
+                    background-color: $yellow;
+                    opacity: 0.3;
                 }
                 &:hover{
                     span{
-                        background-color: $yellow;
+                        opacity: 1;
                     }
                 }
             }
@@ -189,10 +205,12 @@ header{
                     width: 100%;
                     border-radius: 10px;
                     height: 10px;
+                    background-color: $softRed;
+                    opacity: 0.3;
                 }
                 &:hover{
                     span{
-                        background-color: $softRed;
+                        opacity: 1;
                     }
                 }
             }
@@ -328,14 +346,6 @@ footer{
                 fill: $darkModerateCyan;
             }
         }
-        // filter: sepia(1) brightness(0.5) contrast(1)  ;
-
-        // clip-path: fill-box;
-        // text-align: center;
-        // font-family: 'Barlow', sans-serif;
-        // font-weight: 900;
-        // font-size: 2em;
-        // color: red;
     }
 
     #menu{
